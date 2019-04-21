@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+
+        p {
+            font: Italic bolder 20px 微软雅黑;
+        }
+
+        #taobiqi{
+            font:oblique bold 100px 微软雅黑;
+            color: aquamarine;
+        }
+
+        .link{
+           font-family: 微软雅黑; font-weight: 500; font-size: 100px;font-style: normal;
+        }
+
+        .dec{
+            text-decoration: none;
+        }
+
+        h1>strong{
+            font-style: inherit; font-weight: 300; font-family: 微软雅黑;
+            color: aqua;
+        }
+
+        h1 p{
+            color: brown;
+        }
+        span~a{
+            color: chartreuse;
+            font-size:60px;
+        }
+        li:first-child{
+            color: chartreuse;
+        }
+        li:last-child{
+            color: aqua;
+        }
+        li:nth-child(3){
+            font-family: 隶书;
+        }
+        li:nth-child(odd){
+            color: blue;
+        }
+        li:nth-child(even) {
+            color: crimson;
+        }
+        div[class^="test"]
+        {
+            background:#ffff00;
+        }
+        div[class$="test"]
+        {
+            background: red;
+        }
+        p[class*="test"]
+        {
+            background:rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+<div>
+<a href="" class="link dec">两仪式</a>
+<p>鸢一</p>
+<p id="taobiqi">折纸</p>
+<h1>鸢<strong>一折</strong>纸</h1>
+<h1>
+    <p>时崎狂三</p>
+</h1>
+    <span></span>
+    <a href="">三</a>
+    <a href="">三</a>
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+    </ol>
+</div>
+<div class="first_test">梦魇</div>
+<div class="second">kurimi</div>
+<div class="test_last">tokisaki</div>
+<p class="test">DATE A LIVE</p>
+</body>
+</html>

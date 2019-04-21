@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div{
+            background-color: rebeccapurple;
+            width: 2000px;
+            height: 2000px;
+        }
+        /*1000<x<1200*/
+        @media (max-width: 1200px) and  (min-width: 1000px){
+            div{
+                background-color: aqua;
+                height: 1200px;
+            }
+        }
+        /*700<x<999*/
+        @media (max-width: 999px) and  (min-width: 700px){
+            div{
+                background-color: darkblue;
+                height: 600px;
+            }
+        }
+        /*300<x<699*/
+        @media (max-width: 699px) and  (min-width:300px){
+            div{
+                background-color: navajowhite;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

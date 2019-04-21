@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .box1{
+            /*如果想让小边框距离大边框顶部有距离，可以设置大边框的border*/
+            border: 2px dashed blue;
+            height: 1000px;
+            background-color: forestgreen;
+            /*不会合并，取最大值*/
+            margin-top: 1000px;
+        }
+        .box2{
+            /*当高度和padding同时设置时，高度不起作用*/
+            height: 30px;
+            /*上-左右-下  上下-左右 四边距都一样 */
+            padding: 10px  30px 5px ;
+            background-color: goldenrod;
+            border: 2px dotted rosybrown;
+            margin-top: 500px;
+            margin-left: 20px;
+
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="box1">
+    <div class="box2">
+        山河入梦来
+    </div>
+</div>
+
+</body>
+</html>

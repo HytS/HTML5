@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .boxOne{
+
+
+        }
+        .boxOne input{
+            height: 25px;
+        }
+        .boxOne img{
+            height: 25px;
+            position: relative;
+            top: 7px;
+            left: 8px;
+
+        }
+        /*偏移了标准流的东西该如何居中*/
+        .boxTwo{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            background-color: green;
+            left: 50%;
+            /*偏移了标准流的东西需要特殊的方式*/
+            margin-left: -150px;
+        }
+        .boxThree{
+            width: 150px;
+            height: 150px;
+            background-color: palegreen;
+        }
+
+        /*京东hot*/
+        .boxFour{
+            background-color: blueviolet;
+            height: 70px;
+            position: relative;
+            top: 500px;
+            /*与内部div（container）的距离*/
+            padding: 5px 5%;
+        }
+        .boxFour>div{
+            float: left;
+            line-height: 70px;
+            width: 20%;
+            text-align: center;
+        }
+        .boxFour>div:hover{
+            background-color:goldenrod;
+        }
+        .boxFour>div:hover a{
+            color: white;
+        }
+        .boxFour img{
+            position: absolute;
+            top: -8px;
+            left: 510px;
+        }
+        /*食谱*/
+        .boxFive>.new{
+            background-position: 0px -240px;
+            width: 148px;
+            height: 37px;
+            background-image: url(images/tuangou.png);
+            position: absolute;
+            top:291px;
+            left:-7px;
+        }
+        .boxFive>.red{
+            background-position: -96px -280px;
+            width: 45px;
+            height: 44px;
+            background-image: url(images/tuangou.png);
+            position: absolute;
+        }
+        .boxFive img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="boxOne">
+    <input type="text" >
+    <img src="images/vcode.jpg" >
+</div>
+<div class="boxTwo">
+    <div class="boxThree">
+
+    </div>
+</div>
+
+<!--子绝对 父相对-->
+<!--验证码 京东 食谱-->
+<div class="boxFour">
+    <div><a href="">1</a></div>
+    <div><a href="">2</a></div>
+    <div><a href="">3</a><img src="images/hot.png" alt=""></div>
+    <div><a href="">4</a></div>
+    <div><a href="">5</a></div>
+</div>
+
+<!--食谱-->
+<div class="boxFive">
+    <div class="new"></div>
+    <div class="red"></div>
+    <img src="images/meat.jpg" >
+    <p>真好</p>
+</div>
+</body>
+</html>
