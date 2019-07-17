@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul >
+        <!--contenteditable="true" 可编辑状态、false:不可编辑状态-->
+        <!--designmode属性只能在js脚本里被修改编辑-->
+        <!--hiddden 隐藏属性-->
+        <li>状态1</li>
+        <li>状态2</li>
+        <li>状态3</li>
+    </ul>
+    <!--spellcheck 可以根据类型检查输入的内容-->
+    <input type="text" spellcheck="true">
+
+    <!--tabindex=-1 : 无法通过tab获取焦点-->
+    <a href="#" tabindex="1">tab1</a>
+    <a href="#" tabindex="3">tab3</a>
+    <a href="#" tabindex="2">tab2</a>
+
+    <ul tabindex="-1">
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+    </ul>
+
+    <article>
+        <header>
+            <p>welcome to github </p>
+        </header>
+
+        <article>
+
+            <header>作者</header>
+
+            <p>评论</p>
+
+            <footer>timer</footer>
+
+        </article>
+
+        <footer>
+            <p>这是底部</p>
+        </footer>
+    </article>
+
+    <!--article可以表示插件-->
+    <article>
+        <h1>这是一个内嵌页面</h1>
+        <object data="" type="">
+            <embed src="#" width="400px" height="600px">
+        </object>
+    </article>
+
+    <p>aside</p>
+    <!--aside--nav-->
+    <header>
+        <h1>js入门</h1>
+    </header>
+    <article>
+        <h1>语法</h1>
+        <p>正文</p>
+        <aside>
+            <h1>名词解释</h1>
+            <p>语法解释</p>
+        </aside>
+    </article>
+    <aside>
+        <nav>
+            <h2>评论</h2>
+            <ul>
+                <li><a href="#">2015-3-11</a></li>
+                <li><a href="#">
+                    真希望能再来
+                </a></li>
+            </ul>
+        </nav>
+    </aside>
+</body>
+</html>
